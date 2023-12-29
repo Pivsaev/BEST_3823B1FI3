@@ -1,11 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
 bool compare_double(double x, double y) {
-    return true; // Not implementation
+    if ((float) x == (float) y){
+        return true;}
+    return false;
 }
-
 int get_nearest_int(double x) {
-    return 0; // Not implementation
+    return rint(x);
 }
-
 double get_fractional(double x) {
-    return 0.1; // Not implementation
+    return x-floor(x);
 }
